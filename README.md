@@ -18,3 +18,24 @@ validation that what is entered is actually a valid vehicle would be preferentia
 The application uses spring-boot so it can be run either with (If you have maven installed)
     `mvn spring-boot:run`
 or by running it through the EDI (Right-click the App class and select Run)
+
+Here is an example payload for the API
+
+```json
+{
+  "vehicle": "Car",
+  "dates": ["2013-03-27 06:59:00",
+  "2013-03-27 08:00:00",
+  "2013-03-27 09:31:00",
+  "2013-03-27 15:31:00",
+  "2013-03-27 17:31:00"]
+}
+```
+vehicle can be replaced by any other vehicle in this list for testing purposes
+
+- Emergency vehicles
+- Busses
+- Diplomat vehicles
+- Motorcycles
+- Military vehicles
+- Foreign vehicles
